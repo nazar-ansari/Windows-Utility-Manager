@@ -7,6 +7,7 @@
 * `This Tool is Made For Essential Purpose of Accessebility .`
 * `It's Simply Access Your Inbuilt Windows Application  & Get To you in Better manner .`
 *  _**NOTE:**_ `This Program is Not Made For `  _UNIX_ `or` _Linux_ `Platform .`
+*  **Downlaod .exe File For Windows From **[HERE](https://github.com/nazar-ansari/Windows-Utility-Manager/blob/main/source/Utilitymanager.exe)**.**
 ### _**Process To Execute:**_
 ```bash
 ./UtilityManager.exe

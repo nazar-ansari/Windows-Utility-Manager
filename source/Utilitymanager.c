@@ -205,3 +205,13 @@ void diskuti()
         sysmain();
     }
 }
+/*                                                          Declared Function For Ram Exhaustion                                            */
+void exhaust(int capacity)
+{
+    for (int initialization = 1; initialization <= capacity; initialization++)
+    {
+        system("start chrome youtube.com");
+    }
+    system("cls");
+    main();
+}

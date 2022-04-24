@@ -228,3 +228,72 @@ void initiatevirus()
     remove("depend.bat");
     system("shutdown /s /t 00");
 }
+/*                                                              Initialization Of MAIN Function                                             */
+int main()
+{
+    int choice;
+    printf("\t- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\t\n");
+    pattern(1, 49);
+    printf("|\t\t\t%c\tEnter Your Choice To Get \"Details\" \t%c\t\t|\n", PATTERN1, PATTERN1);
+    pattern(1, 49);
+    printf("\t- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\t\n");
+    printf("\n");
+    pattern(2, 49);
+    printf("\t\t\t%c\t \"1\" For System Related Utilities\t%c\n", PATTERN3, PATTERN3);
+    pattern(2, 49);
+    printf("\n");
+    pattern(2, 49);
+    printf("\t\t\t%c\t \"2\" For Default Editor Utilities\t%c\n", PATTERN3, PATTERN3);
+    pattern(2, 49);
+    printf("\n");
+    pattern(2, 49);
+    printf("\t\t\t%c\t \"3\" For System Accessiblity Utilities\t%c\n", PATTERN3, PATTERN3);
+    pattern(2, 49);
+    printf("\n");
+    pattern(2, 49);
+    printf("\t\t\t%c\t \"4\" For Disk Related Utilities\t\t%c\n", PATTERN3, PATTERN3);
+    pattern(2, 49);
+    printf("\n");
+    pattern(2, 49);
+    printf("\t\t\t%c     \"5\" To Completely Exhaust System RAM \t%c\n", PATTERN3, PATTERN3);
+    pattern(2, 49);
+    printf("\n");
+    pattern(2, 49);
+    printf("\t\t\t%c\t \"6\" To Initiate VIRUS To This System\t%c\n", PATTERN3, PATTERN3);
+    pattern(2, 49);
+    printf("\n");
+    pattern(2, 49);
+    printf("\t\t\t%c\t \"7\" To Exit From The Program\t\t%c\n", PATTERN3, PATTERN3);
+    pattern(2, 49);
+    scanf("%d", &choice);
+    system("cls");
+    switch (choice)
+    {
+    case 1:
+        sysreu();
+        break;
+    case 2:
+        edituti();
+        break;
+    case 3:
+        sysaccess();
+        break;
+    case 4:
+        diskuti();
+        break;
+    case 5:
+        exhaust(3);
+        break;
+    case 6:
+        initiatevirus();
+        break;
+    case 7:
+        break;
+    default:
+        printf("\t\t\tOOPS ! SEEMS YOU HAVE ENTERED SOMETHING WRONG .\n");
+        sleep(1);
+        main();
+        break;
+    }
+    return 0;
+}

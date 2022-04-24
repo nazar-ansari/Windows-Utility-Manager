@@ -74,3 +74,47 @@ void sysreu()
         sysmain();
     }
 }
+/*                                                                     Declared Function For Editor Related Utilites                            */
+void edituti()
+{
+    int options;
+    pattern(5, 49);
+    printf("\t\t\t%c\t CHOOSE The Service To Start\t\t%c\n", PATTERN3, PATTERN3);
+    pattern(5, 49);
+    printf("\t\t\t 1 :  Open Microsoft WordPad .\n");
+    printf("\t\t\t 2 :  Open Microsoft Excel .\n");
+    printf("\t\t\t 3 :  Open Microsoft PowerPoint .\n");
+    printf("\t\t\t 4 :  Open Notepad In Current Location .\n");
+    printf("\t\t\t 5 :  Open Microsoft Paint .\n");
+    scanf("%d", &options);
+    switch (options)
+    {
+    case 1:
+        sleep(1);
+        system("write");
+        sysmain();
+        break;
+    case 2:
+        sleep(0.5);
+        system("start Excel");
+        sysmain();
+        break;
+    case 3:
+        sleep(0.5);
+        system("start powerpnt");
+        sysmain();
+        break;
+    case 4:
+        sleep(0.5);
+        system("notepad");
+        sysmain();
+        break;
+    case 5:
+        sleep(0.5);
+        system("mspaint");
+        sysmain();
+        break;
+    default:
+        sysmain();
+    }
+}

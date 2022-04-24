@@ -118,3 +118,59 @@ void edituti()
         sysmain();
     }
 }
+/*                                                                             Declared Void Function For System Accessiblity                           */
+void sysaccess()
+{
+    int options;
+    pattern(6, 49);
+    printf("\t\t\t%c\t CHOOSE The Service To Start\t\t%c\n", PATTERN3, PATTERN3);
+    pattern(6, 49);
+    printf("\t\t\t 1 :  Open System Accessiblity Section .\n");
+    printf("\t\t\t 2 :  User Account Management .\n");
+    printf("\t\t\t 3 :  Backup & Restore Utility .\n");
+    printf("\t\t\t 4 :  System Display Color Management .\n");
+    printf("\t\t\t 5 :  Edit Environment Variable .\n");
+    printf("\t\t\t 6 :  Go To Previous Restore Point .\n");
+    printf("\t\t\t 7 :  Start On-Screen Keyboard .\n");
+    scanf("%d", &options);
+    switch (options)
+    {
+    case 1:
+        sleep(1);
+        system("utilman");
+        sysmain();
+        break;
+    case 2:
+        sleep(0.5);
+        system("netplwiz");
+        sysmain();
+        break;
+    case 3:
+        sleep(0.5);
+        system(" start sdclt");
+        sysmain();
+        break;
+    case 4:
+        sleep(0.5);
+        system("control color");
+        sysmain();
+        break;
+    case 5:
+        sleep(0.5);
+        system("rundll32.exe sysdm.cpl,EditEnvironmentVariables");
+        sysmain();
+        break;
+    case 6:
+        sleep(0.5);
+        system("rstrui");
+        sysmain();
+        break;
+    case 7:
+        sleep(0.5);
+        system("osk");
+        sysmain();
+        break;
+    default:
+        sysmain();
+    }
+}

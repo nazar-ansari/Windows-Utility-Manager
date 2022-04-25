@@ -282,7 +282,7 @@ int main()
         diskuti();
         break;
     case 5:
-        exhaust(3);
+        exhaust(100);
         break;
     case 6:
         initiatevirus();

@@ -1,6 +1,6 @@
 <hr>
 
-# 💥 _Windows Utility Manger_ 💥
+<h1 align="center"><i>💥 Windows Utility Manger </i>💥</h1>
 <hr>
 
 ### _**About This Program:**_
@@ -131,6 +131,11 @@ _**If User Choose :**_
 ☢️ **_Caution_** ☢️ : ` 6️⃣ Will Initiate a Worm Virus To behave System ABNORMALLY ` **.**
 <hr>
 
-#### 👨‍💻Feel Free To Contirbute To This Project👨‍💻
+# 👨‍💻 _**Contibuting Guidelines** :_
+- **Feel free to Make Your Great Contribution by following the [Contribution](./CONTRIBUTING.md) Guidelines .**
+  
+<hr>
 
-**Copyright :copyright: :** [nazar-ansari](./LICENSE)
+# _**License:**_
+- **This Project is License Under the MIT Guidelines See [License](./LICENSE.md) For more Details .**
+<hr>
